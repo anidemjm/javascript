@@ -1,0 +1,477 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    float: left;
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav ul li a {
+    display: block;
+    padding: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    filter: invert(0.2) sepia(1) hue-rotate(20deg) saturate(10000%);
+}
+
+#logo {
+    width: 15%;
+    height: 15%;
+}
+
+#bandera {
+    width: 25px;
+    height: 15px;
+}
+
+#imagenes {
+    width: 100%;
+    height: 100%;
+}
+
+#check {
+    width: 16px;
+    height: 14px;
+}
+
+#cuenta {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+
+#mas {
+    width: 35px;
+    height: 40px;
+    display: block;
+    padding: 10px;
+}
+
+#menu {
+    background-color: #000000;
+    opacity: 65%;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    z-index: 10;
+}
+
+#menuDerecha {
+    width: 45%;
+    padding-left: 10%;
+}
+
+#menuIzquierda {
+    width: 48%;
+    text-align: center;
+}
+
+#menuPie {
+    width: 67%;
+    text-align: center;
+    align-items: flex-end;
+}
+
+#idioma {
+    width: 13%;
+    text-align: center;
+}
+
+#divisor {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+#noSelectable {
+    filter: none;
+}
+
+.horizontalItems {
+    display: flex;
+}
+
+.tituloPremium {
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+    max-width: 100%;
+    width: auto;
+    display: inline-block;
+    font-size: 80px;
+}
+
+.subtituloPremium {
+    line-height: 1.5;
+    margin: 30px 0;
+    padding: 0;
+    margin-bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.terminosCondiciones {
+    font-size: 12px;
+    width: 100%;
+}
+
+.banner {
+    overflow: auto;
+    color: #ffffff;
+    background: url(../imagenes/premium_dancer.png) no-repeat bottom right/450px;
+    background-color: #509BF5;
+    min-height: 70vh;
+}
+
+.banner a {
+    color: #ffffff;
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+}
+
+.banner>article {
+    font-family: Circular;
+    width: 1170px;
+    box-sizing: border-box;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 15px;
+    padding-top: 22vh;
+}
+
+.articuloPremium {
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    margin: 0 auto;
+    padding: 35px 15px;
+    max-width: 100%;
+    box-sizing: border-box;
+    width: 1170px;
+}
+
+.tituloPasatePremium {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.pasatePremium {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.botonPlanes {
+    border-radius: 500px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+    padding: 17px 48px;
+    background-color: #1db954;
+    color: #ffffff;
+    text-decoration: none !important;
+}
+
+.botonPlanes:hover:not(:focus):not(:disabled) {
+    transform: scale(1.04);
+    background-color: #1ed760;
+    color: #ffffff;
+}
+
+.botonPlanes:focus {
+    color: #eeeeee;
+    background-color: #1da64d;
+}
+
+.botonPlanes:active:hover {
+    transform: scale(1);
+    background-color: #1da64d;
+    color: #b3b3b3;
+}
+
+.botonElijePremium {
+    border-radius: 500px;
+    width: 54%;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+    padding: 17px 48px;
+    background-color: #1db954;
+    color: #ffffff;
+    text-decoration: none !important;
+    text-align: center;
+}
+
+.botonElijePremium:hover:not(:focus):not(:disabled) {
+    transform: scale(1.04);
+    background-color: #1ed760;
+    color: #ffffff;
+}
+
+.botonElijePremium:focus {
+    color: #eeeeee;
+    background-color: #1da64d;
+}
+
+.botonElijePremium:active:hover {
+    transform: scale(1);
+    background-color: #1da64d;
+    color: #b3b3b3;
+}
+
+.imagenes {
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    display: block;
+    width: 270px;
+}
+
+.imagen {
+    background-position: center top;
+    margin-right: 20px;
+    width: 142px;
+    height: 142px;
+    display: block;
+    margin: 0 auto 40px auto;
+    margin: 0 auto 40px auto;
+}
+
+.textoImagen {
+    width: 100%;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: block;
+    text-align: center;
+}
+
+.tituloTextoImagen {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 21px;
+    text-align: center;
+}
+
+.textoTextoImagen {
+    font-size: 16px;
+    font-weight: normal;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.textoTextoImagen a {
+    color: #000;
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+}
+
+.seccionEligePremium {
+    overflow: auto;
+    background: #f8f8f8;
+}
+
+.tituloElijePremium {
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+}
+
+.subtituloElijePremium {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.tarjetasElijePremium {
+    margin: 50px 0 26px;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+}
+
+.cabezaTarjeta {
+    background-color: #ffffff;
+    max-width: 400px;
+    width: auto;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-flow: column nowrap;
+    box-shadow: 0px 8px 0px 0px #ffffff, 0 0 8px rgba(0, 0, 0, 0.3);
+    margin: 0 16px 0 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    grid-row: 1;
+}
+
+.cabezaTarjeta p:last-of-type {
+    margin-bottom: 20px;
+}
+
+.mesGratis {
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 4px 8px;
+    display: inline-block;
+    font-weight: 900;
+    margin-bottom: 10px;
+    margin-block-start: 0;
+    margin-block-end: 10px;
+    background-color: #2e77d0;
+    color: #ffffff;
+}
+
+.centradoTarjetas {
+    width: 58%;
+    padding-left: 22%;
+    display: inline-block;
+}
+
+.cuerpoTarjeta {
+    background-color: #ffffff;
+    max-width: 400px;
+    width: auto;
+    list-style: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    margin: 0 16px 0 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 20px;
+    padding-bottom: 16px;
+}
+
+.listaBeneficios {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.espaciadoLista {
+    display: inline-block;
+    color: #000000;
+    padding: 0 10px 0 0;
+}
+
+.textoListaBeneficios {
+    line-height: 20px;
+    font-size: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.botonTarjeta {
+    background-color: #ffffff;
+    max-width: 400px;
+    width: auto;
+    box-shadow: 0px -9px 0px 0px #ffffff, 0 0 8px rgba(0, 0, 0, 0.3);
+    margin: 0 16px 0 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+}
+
+.pieTarjeta {
+    background-color: #ffffff;
+    max-width: 400px;
+    width: auto;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px -9px 0px 0px #ffffff, 0 0 8px rgba(0, 0, 0, 0.3);
+    margin: 0 16px 0 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 4px;
+    padding-bottom: 16px;
+}
+
+.textoPieTarjeta {
+    color: #919496;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.textoPieTarjeta>a {
+    color: #919496;
+    text-decoration: underline;
+}
+
+.tituloCabezaTarjeta {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
+    margin: 0 0 5px;
+}
+
+.textoCabezaTarjeta {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0 0 2px;
+}
+
+.separadorTarjeta {
+    align-self: stretch;
+    border-color: #cccccc;
+    margin: auto 0 0;
+}
+
+.piePagina p {
+    font-size: 13;
+}
+
+.piePagina nav {
+    background: #000000;
+    width: 80%;
+    align-items: flex-end;
+    padding-left: 20%;
+}
+
+.piePagina li:hover {
+    filter: invert(1) sepia(1) hue-rotate(45deg) saturate(10000%);
+}
+
+.piePagina nav li a {
+    float: right;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: gray;
+}
+
+.copyright {
+    font-size: 150px;
+}
