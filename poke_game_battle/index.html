@@ -1,0 +1,98 @@
+  <!-- Desarollado por JMMR -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokeBattle</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+  <!-- Contenedor global -->
+  <div class="container">
+
+    <!-- Jugador 1 -->
+    <div class="player1">
+      <div class="title">
+        <h1>Jugador 1</h1>
+      </div>
+      <!-- Selector de personaje1 -->
+      <div class="selectdiv">
+        <label>
+          <select onchange="buildCharacter(value, 1)">
+            <option disabled selected value>Elija una opción</option>
+            <option>Pikachu</option>
+            <option>Charmander</option>
+            <option>Bulbasur</option>
+            <option>Squirtle</option>
+          </select>
+        </label>
+      </div>
+      <!-- Imagen y estadísticas del personaje1 -->
+      <div class="character1">
+        <img class="imgC" id="character-image1" src="./assets/img/Unknown.png" alt="">
+        <div class="stats1">
+          <p>Daño : <input type="number" min="1" max="100" id="damage1" /></p>
+          <p>Defensa : <input type="number" min="1" max="100" id="defense1" /></p>
+          <p>Vida : <input type="number" min="1" max="100" id="life1" /></p>
+        </div>
+      </div>
+      <!-- Barra de vida del personaje1 -->
+      <progress style="display: none;" class="progress" id="health-bar-player1" value="100" max="100"></progress>
+    </div>
+
+    <!-- Log de partida -->
+    <div id="log-game">
+      <button id="button-fight" class="btn" style="display: block;" onclick="startFight()">
+        <span>¡ LUCHA !</span>
+      </button>
+      <button id="button-restart" class="btn" style="display: none;" onclick="restart()">
+        <span>RESTART</span>
+      </button>
+      <!-- Contenido dinámico -->
+    </div>
+
+    <!-- Jugador 2 -->
+    <div class="player2">
+      <div class="title">
+        <h1>Jugador 2</h1>
+      </div>
+      <!-- Selector del personaje2 -->
+      <div class="selectdiv">
+        <label>
+          <select onchange="buildCharacter(value, 2)">
+            <option disabled selected value>Elija una opción</option>
+            <option>Pikachu</option>
+            <option>Charmander</option>
+            <option>Bulbasur</option>
+            <option>Squirtle</option>
+          </select>
+        </label>
+      </div>
+      <!-- Imagen y estadísticas del personaje2 -->
+      <div class="character2">
+        <div class="stats2">
+          <p>Daño : <input type="number" min="1" max="100" id="damage2" /></p>
+          <p>Defensa : <input type="number" min="1" max="100" id="defense2" /></p>
+          <p>Vida : <input type="number" min="1" max="100" id="life2" /></p>
+        </div>
+        <img class="imgC" id="character-image2" src="./assets/img/Unknown.png" alt="">
+      </div>
+      <!-- Barra de vida del personaje2 -->
+      <progress style="display: none;" class="progress" id="health-bar-player2" value="100" max="100"></progress>
+    </div>
+  </div>
+
+  <!-- Modal que usaremos para mostrar los distintos mensajes, en lugar de utilizar "alert()" -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="modalContent">
+        <!-- Contenido dinámico que añadiremos en función de lo que queramos mostrar-->
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
