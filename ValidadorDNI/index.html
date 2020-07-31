@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Validador DNI</title>
+</head>
+<body>
+    <header class="main-title">
+        <div class="general-text">
+            <h1>Validador DNI</h1>
+            <p class="normal-text">En esta web puedes validar que tu DNI tiene el formato correcto.</p>
+        </div>
+    </header>
+    <main class="input-area">
+        <section>
+            <div class="input-subcontainer">
+                <input type="text" id="input">
+            </div>
+            <div class="input-subcontainer">
+                <button type="submit" onclick="validate()" id="validate-button">Validar</button>
+            </div>
+            <div class="correct-container">
+                <h2>¡Tu DNI es correcto!</h2>
+            </div>
+            <div class="wrong-container">
+                <h2>¡Tu DNI es incorrecto!</h2>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <p class="copyright-text">Copyright 2020 Yo Mismo</p>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>

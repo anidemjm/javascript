@@ -1,0 +1,16 @@
+
+.hero{
+background-image:url("../contenido/oficina.jpg");
+background-size: cover;
+height: 100vh;
+display: flex;
+background-color: azure;
+align-items: center;
+}
+
+.borde{
+border: 20px solid rgba(0,0,0,.3);
+border-radius: 10px;
+background-color: 
+color black;
+}
