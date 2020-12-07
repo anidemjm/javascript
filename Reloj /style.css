@@ -1,0 +1,23 @@
+/* Estilos Genericos 
+Developer by José Manuel Medina Ruiz*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Overlock", Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+  }
+  
+  #fecha{
+    font-size: 5rem;
+    font-weight: 800;
+  }
+  
+  #hora{
+    font-size: 3rem;
+    font-weight: 800;
+  }
