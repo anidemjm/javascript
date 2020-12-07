@@ -1,4 +1,4 @@
-// Developer by José Manuel Medina Ruiz
+// Developer by JMMR
 
 function starTime() {
     let hoy = new Date();
